@@ -1,0 +1,24 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+
+contract Errors {
+uint public stateVar = 1;
+
+function requireExample(address _address, uint _amount) public {
+    require(_address == msg.sender, "Unauthorized address");
+    require(_amount > 100, "Insufficient balance");
+    stateVar++;
+}
+
+function revertExample(address _address) public {
+    if (_address != msg.sender) {
+        revert("Unauthorized address");
+    }
+    stateVar++;
+}
+
+function assertExample(address _address) public {
+    assert(_address == msg.sender);
+    stateVar++;
+  }
+ }
