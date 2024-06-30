@@ -80,4 +80,4 @@ Manvendra Singh
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the License.md file for details.
